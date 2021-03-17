@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>訂購吉他表單</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="#" style="background-color: #C6DEFF;">開心創作網</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://my-best.tw/12307">詳細介紹</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">樂譜</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="https://www.91pu.com.tw/index.html">91譜</a>
+            <a class="dropdown-item" href="https://www.polygon.guitars">Polygon 結他譜</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">訂購吉他表單</h1>
+      <p class="lead">請在3月20號或之前填寫</p>
+      <hr class="my-2">
+    </div>
+  </div>
+
+
+  <table class="table table-striped table-bordered table-hover text-center">
+    <thead class="table-info ">
+      <tr>
+        <th>編號</th>
+        <th>型號</th>
+        <th>價錢（NTD）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">EB-01</td>
+        <td>Enya 34吋旅行吉他</td>
+        <td>3790</td>
+      </tr>
+      <tr>
+        <td scope="row">FD-150BLCEQ</td>
+        <td>Fina 電木吉他</td>
+        <td>4980</td>
+      </tr>
+      <tr>
+        <td scope="row">F310</td>
+        <td>Yamaha 木吉他</td>
+        <td>3800</td>
+      </tr>
+      <tr>
+        <td scope="row">DR-100</td>
+        <td>Epiphone 木吉他</td>
+        <td>4500</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div class="m-5">
+    <form action="check.php" method="post">
+      <div class="form-group">
+        <label for="name">姓名</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="請輸入姓名">
+      </div>
+
+      <div class="form-group">
+        <label for="">性別</label>
+        <div class="form-check">
+          <label for="form-check-label">
+            <input type="radio" class="form-check-input" name="sex" id="" value="M" checked>
+            男性
+          </label>
+        </div>
+
+        <div class="form-check">
+          <label for="form-check-label">
+            <input type="radio" class="form-check-input" name="sex" id="" value="F" checked>
+            女性
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E mail</label>
+        <input type="text" name="email" id="email" class="form-control" placeholder="請輸入email">
+      </div>
+
+      <div class="form-group">
+        <label for="password">電話</label>
+        <input type="text" name="phone" id="phone" class="form-control" placeholder="請輸入電話號碼">
+      </div>
+
+      <div class="form-group">
+        <label for="password">送貨地址</label>
+        <input type="text" name="address" id="address" class="form-control" placeholder="請輸入送貨地址">
+      </div>
+
+      <div class="form-group">
+        <label for="">款式</label>
+        <select class="form-control" name="degree" id="">
+          <option value="4">Enya 34吋旅行吉他</option>
+          <option value="3">Fina 電木吉他</option>
+          <option value="2">Yamaha 木吉他</option>
+          <option value="1">Epiphone 木吉他</option>
+        </select>
+      </div>
+
+
+
+
+
+      <br>
+      <button type="button" class="btn btn-light";><a href="success.html">送出</a></button>
+  </div>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
